@@ -1,6 +1,14 @@
+/*The Random Number Guessing Game generates a number between 1 and 6 and gives a player 2 attempts to guess the number*/
+//Assume the player didn't guess correctly
 var correctGuess = false;
+//Generate random number from 1 to 6
 var randomNumber = Math.floor(Math.random()*6)+1;
 var guess = prompt ('I am thinking of a number between 1 and 6. What is it?');
+/*Test to see if player
+1. Correct
+2. Guessed too high
+3. Guessed too low
+*/
 if (parseInt(guess)===randomNumber) {
   correctGuess = true;
 }else if (parseInt(guess)<randomNumber){
