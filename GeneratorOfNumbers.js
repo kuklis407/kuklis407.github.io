@@ -21,6 +21,7 @@ if (parseInt(guess)===randomNumber) {
   if (parseInt(guessLess)===randomNumber){
     correctGuess = true;
   }
+  //test if player is correct and output responce
 } if (correctGuess) {
   document.write('<p>You guessed the number!</p>');
 }else{
